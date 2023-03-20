@@ -24,7 +24,7 @@ def main():  # defining the main function menu of each option
             numcon = False
 
 
-def encode(password):
+def encode(password): #done by Alexis, encodes password inputted by user
     encodenum = ""
     for num in password:
         encodenum = encodenum + str((int(num) + 3) % 10)
