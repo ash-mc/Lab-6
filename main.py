@@ -19,7 +19,7 @@ def main():  # defining the main function menu of each option
             print(f"The encoded password is: ,  and the original password is:", password)
             menu()
 
-        elif choice == 3:
+        elif choice == 3: #3 options, 1st encodes, 2nd decodes, 3rd quits
             numcon = False
 
 
@@ -29,7 +29,7 @@ def encode(password):
         encodenum = encodenum + str((int(num) + 3) % 10)
         return encodenum
 
-def decode(password): #done by Aleli
+def decode(password): # decode fucntion done by Aleli Vaca
     empty_str = ""
     for i in password:
         if i == "0":
