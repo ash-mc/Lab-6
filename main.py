@@ -29,12 +29,22 @@ def encode(password):
         encodenum = encodenum + str((int(num) + 3) % 10)
         return encodenum
 
+def decode(password): #done by Aleli
+    empty_str = ""
+    for i in password:
+        if i == "0":
+            i = "7"
+        if i == "1":
+            i = "8"
+        if i == "2":
+            i = "9"
+        else:
+            i = int(i)
+            i -= 3
+            i = str(i)
+        empty_str += i
+    return empty_str
 
-def decode(password):
-    pass
-
-
-# parthner does it
 
 
 if __name__ == '__main__':
