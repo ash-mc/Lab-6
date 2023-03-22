@@ -16,7 +16,7 @@ def main():  # defining the main function menu of each option
             menu()
 
         elif choice == 2:
-            print(f"The encoded password is: , f and the original password is:", password)
+            print(f"The encoded password is: ,  and the original password is:", password)
             menu()
 
         elif choice == 3:
